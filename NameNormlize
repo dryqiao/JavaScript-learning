@@ -1,0 +1,15 @@
+'use strict';
+
+function normalize(arr) {
+    return arr.map(function(x){
+        return x[0].toUpperCase()+x.substring(1).toLowerCase()
+});
+}
+
+// 测试:
+if (normalize(['adam', 'LISA', 'barT']).toString() === ['Adam', 'Lisa', 'Bart'].toString()) {
+    alert('测试通过!');
+}
+else {
+    alert('测试失败!');
+}
