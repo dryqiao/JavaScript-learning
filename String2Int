@@ -1,0 +1,10 @@
+'use strict';
+
+function string2int(s) {
+    var k=s.split('').map(function(x){
+    return x*1;
+  })
+  return k.reduce(function(x,y){
+    return 10*x+y;
+  });
+ 
