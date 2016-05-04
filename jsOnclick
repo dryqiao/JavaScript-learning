@@ -1,0 +1,12 @@
+window.onload=function(){
+	if(!document.getElementsByTagName)return false;//对象检测
+	var lnks=document.getElementsByTagName("a");           //获取a标签对象
+	for(var i=0;i<lnks.length;i++){                        //添加onclick事件
+		if(lnks[i].getAttribute("class")=="showPic"){
+			lnks[i].onclick=function(){
+				showPic(this);
+				return false;
+			}
+		}
+	}
+}
