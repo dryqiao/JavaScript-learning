@@ -1,0 +1,11 @@
+function insertAfter(newElement,targetElement){
+	var parent=targetElement.parentNode;
+	//若目标元素是最后一子元素，直接插入
+	if(parent.lastChild==targetElement){
+		parent.appendChild(newElement);
+	}
+	//不是的话，在目标元素和目标元素的下一个兄弟元素之间插入
+	else{
+		parent.insertBefore(newElement,targetElement.nextSibling);
+	}
+}
