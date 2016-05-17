@@ -1,0 +1,10 @@
+function addClass(element,value){
+	if(!element.className){
+		element.className=value;
+	}else{
+		newclassName=element.className;
+		newclassName+=" ";//空格
+		newclassName=value;
+		element.className=newclassName;
+	}
+}
