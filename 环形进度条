@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.pie-right,.pie-left{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #0cc;
+			}
+			.progress-right,.progress-left{
+				width: 200px;
+				height: 200px;
+				background: #00aacc;
+				border-radius: 50%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform:  rotate(30deg);
+			}
+			.pie-right,.progress-right{
+				clip: rect(0,auto,auto,100px);
+			}
+			.progress-left{
+				clip: rect(0,100px,auto,auto);
+			}
+			.mask{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				position: absolute;
+				left: 25px;
+				top: 25px;
+				text-align: center;
+				line-height: 150px;
+				font-size: 20;
+				background: #0cc;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="circle">
+			<div class="pie-right">
+					<div class="progress-right"></div>
+			</div>
+			<div class="pie-left">
+				<div class="progress-left"></div>
+			</div>
+			<div class="mask"><span>0</span></div>
+		</div>
+	</body>
+</html>
